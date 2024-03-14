@@ -1,0 +1,390 @@
+:root{
+   --para-font-size:20px;
+   --nav-bar:#292e33;
+   --background-color:#252525;
+}
+
+a:active {
+    color: #E6B325!important ;
+}
+a:hover {
+    color: #E6B325!important ;
+}
+.card {
+    width:20em;
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius:25px;
+  background-color:#252525;
+    padding: 15px;
+    color:#E6B325;
+}
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+       .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+    position: relative;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.cardim{
+    height:250px;
+}
+
+
+.foods{  
+    padding-top:8px; 
+    height: 50px;
+    bottom:1px;
+    position: absolute;
+    font-family: Cursive, Brush Script MT;
+   
+    }
+
+    @media (min-width: 767px) {
+        #bike{
+            position: absolute;
+            bottom:-25px; left:-100%;
+         }
+        }
+
+        @media (max-width: 766px) {
+            #bike{
+                display: none;
+                
+             }
+            }
+
+@media (min-width: 991px) {
+input, select{
+    width:49%;
+}
+}
+
+@media (max-width: 991px) {
+    input, select{
+        width:100%;
+    }
+}
+@media (max-width: 991px) {
+    .red img {
+      display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .card img {
+      height:250px;
+    }
+ }
+
+ @media (max-width: 567px) {
+    .card:not(:first-child){
+      display: none;
+    }
+ }
+
+ @media (max-width:769px) {
+   
+    .card:nth-child(2){
+      display: none;
+    }
+    .card:nth-child(4){
+      display: none;
+    }
+ }
+ @media (max-width:940px) {   
+    .card:nth-child(2){
+     display: none;
+   }
+   }
+
+   .carousel-control-prev,
+   .carousel-control-next {
+     background-color: black;
+     width: 5vh;
+     height: 5vh;
+     border-radius: 50%;
+     top: 50%;
+     transform: translateY(-50%);
+     
+   }
+
+  
+
+
+body{
+   /*  overflow-x:hidden; */
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: black;
+    color:#E6B325;
+overflow: auto;
+   
+
+    overflow-x:hidden;
+    overscroll-behavior: none;
+}
+
+/* nav section */
+
+.navbar{
+    background-color: black!important; 
+ 
+}
+.nav-link,.heading{
+    color:#E6B325;
+}
+
+/*end nav section */
+
+
+
+/* main section */
+
+button{
+    width:120px;
+    height:50px;
+    border-radius:15px;
+    background-color: black;
+    color: #E6B325;
+}
+
+button:hover{
+    background-color:  #E6B325;
+    color:black;
+}
+
+.main{
+     background-color: var(--background-color);
+}
+
+/* end main section */
+
+
+/*about section */
+
+#img1,#img2,#img3{
+    border-radius:25px;
+}
+ 
+    
+#img1{
+    position:absolute;
+    top:250px;
+    left:80px; 
+    z-index:2;   
+    border:3px solid #E6B325;
+}
+
+#img2{
+    position:absolute;  
+    right:5%; 
+    top:35%; 
+    z-index:1;
+    border:3px solid #E6B325;
+}
+#img3{
+    position:relative;
+    top:-2%;
+    left:-10%;
+    border:3px solid #E6B325;
+} 
+.imgs{
+    position:relative;
+}
+
+@media only screen and (max-width:992px){
+    #img1{
+        display: none;
+    }
+}
+
+#img1:hover{
+    
+    transform:scale(1.1,1.1);
+  }  
+
+
+#img2:hover{
+    
+    transform:scale(1.1,1.1);
+  }  
+
+
+#img3:hover{
+    transform:scale(1.1,1.1);
+  }  
+
+/* end about section */
+
+
+/* delivery section */
+
+
+.rel{
+    position: relative;
+}
+
+/* @keyframes move {
+    to{
+        transform: translateX(300px);
+    }
+} */
+
+
+
+.gal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.gal.show{  
+    opacity: 1;
+    z-index:99999;
+    position:fixed;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    width:100%;
+    height:100vh;
+}
+
+.pop{
+    position: relative;
+    min-width:30%;
+    background-color: white;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    border-radius: 30px;
+    padding:5%;
+    color:black;
+    cursor:pointer;
+}
+
+.pop button{
+    width: 150px;
+    background-color: #E6B325;
+    border:2px solid black; 
+    
+}
+.pop a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+/* html {
+    overflow: hidden;
+    height: 100%;
+} */
+
+
+.review{
+    
+    background-color: whitesmoke;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    border-radius: 30px;
+    height:100%;
+}
+
+.cross{
+    position:absolute;
+    top:5%;
+    right:5%;
+
+}
+
+/* abc */
+
+
+
+    .qua{
+        background-image: url(https://modinatheme.com/html/foodking-html/assets/img/banner/main-bg.jpg);
+       
+    }
+
+
+    input,select{
+        border:2px solid black;
+        border-radius: 10px;
+        height:40px;
+       
+    }
+
+    .imbur{
+            
+        position:relative;
+        animation-name:two; 
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        position:relative;
+        animation-iteration-count: 1;    /*  can be given infinite also  */
+        animation-direction:normal;
+   
+    }
+    @keyframes two{
+        0%{
+           top:-500px;
+           transform: rotate(180deg);
+         
+    
+        }
+        25%{
+        top:200px;
+    
+        }
+        
+        50%{
+            top:-50px;;
+        }
+        75%{
+            top:100px;
+        }
+        100%{
+            top:0px;
+        }
+    }
+
+    .menu{
+        background-color:#e6b325!important;;
+    }
+
+
+.sign:hover{
+   background-color: black!important;;
+} 
+
+
